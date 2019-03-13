@@ -1,0 +1,31 @@
+{
+  "name": "mandarin-rhyme",
+  "version": "1.0.0",
+  "description": "A rhyming dictionary tool for Mandarin Chinese",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daddehs1/mandarin-rhyme.git"
+  },
+  "author": "Sasha Daddeh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daddehs1/mandarin-rhyme/issues"
+  },
+  "homepage": "https://github.com/daddehs1/mandarin-rhyme#readme",
+  "dependencies": {
+    "@zurawiki/hanzi": "^0.7.0",
+    "hanzi-to-pinyin": "^1.36.0",
+    "zhuyin": "^1.11.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2"
+  }
+}
