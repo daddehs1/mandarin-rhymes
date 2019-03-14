@@ -2,6 +2,12 @@
   "name": "mandarin-rhymes",
   "version": "1.0.0",
   "description": "A rhyming dictionary tool for Mandarin Chinese",
+  "keywords": [
+    "mandarin",
+    "chinese"
+    "rhyme",
+    "dictionary"
+  ],
   "main": "index.js",
   "directories": {
     "test": "test"
