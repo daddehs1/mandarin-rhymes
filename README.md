@@ -1,19 +1,19 @@
 # Mandarin Rhymes
----
+
 >A rhyming dictionary tool for Mandarin Chinese
 
 ## Background
----
+
 Given a search phrase comprised of Chinese Characters, finds a list of rhyming words from entries in the CC-CEDICT. Rhyming is determined using the final vowel sound of each syllable in the word. Additionally, an option is provided to find only rhyming words which also match the tones of the search phrase.
 
----
+
 ## Install
 
   `$ npm install --save mandarin-rhymes`
 
 
 ## Usage
----
+
 ```javascript
 const MandarinRhymes = require('mandarin-rhymes')
 var rhyme = new MandarinRhymes('能力');
@@ -71,20 +71,20 @@ rhyme.withToneMatching().getRhymes().then(console.log);
 */
 ```
 ## API
----
+
 ```js
 const MandarinRhymes = require('mandarin-rhymes')
 ```
 
 ### Constructor
----
+
 
 ##### MandarinRhymes(hanzi)
 Constructs a `MandarinRhymes` object using the given `hanzi` as a search phrase.
 `hanzi` must consist only of Chinese characters.
 
 ### Methods
----
+
 ##### getRhymes()
 Returns an array of objects representing words that rhyme with the hanzi passed to the constructor, sorted by averageFrequency in ascending order
 Each object has the following fields:
