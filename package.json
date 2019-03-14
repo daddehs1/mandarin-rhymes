@@ -1,5 +1,5 @@
 {
-  "name": "mandarin-rhyme",
+  "name": "mandarin-rhymes",
   "version": "1.0.0",
   "description": "A rhyming dictionary tool for Mandarin Chinese",
   "main": "index.js",
