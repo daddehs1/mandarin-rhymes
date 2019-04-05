@@ -104,7 +104,7 @@ class MandarinRhymes {
     if (this.matchTones) {
       this.filterByToneMatching();
     }
-    // reset syntactic sugar fields to initial value for use in usubsequent calls
+    // reset syntactic sugar fields to initial value for use in subsequent calls
     this.matchTones = false;
 
     return {
@@ -224,11 +224,11 @@ class MandarinRhymes {
     })
   }
 
-  getWordFrequency() {
-    var sumNumber = this.hanzi.split("").reduce((accumulator, currentValue) => {
+  getWordFrequency(hanzi) {
+    var sumNumber = hanzi.split("").reduce((accumulator, currentValue) => {
       return parseInt(accumulator) + parseInt(hanziFrequency.getCharacterFrequency(currentValue).number);
     }, 0);
-    return sumNumber / this.hanzi.length;
+    return sumNumber / hanzi.length;
   }
 
   addAverageFrequencies() {
